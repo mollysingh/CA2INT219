@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html language="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="signup.css">
+        <title>Argyle | SignUp</title>
+        <link rel = "icon" href = "images/logo.png" type = "image/x-icon">
+
+        <script type="text/javascript">
+        function CanSubmit()
+        {
+        var pwd=document.forms[0].txtPassword.value;
+        var cpwd=document.forms[0].txtConfirmPassword.value;
+        if(pwd==cpwd)
+        {
+        {
+        alert("Congratulations! You've signed up successfully!");
+        return true;
+        }
+        }
+        else
+        {
+        alert("Please make sure that Password and Confirm Password values match");
+        return false;
+        }
+        }
+        </script>
+
+</head>
+<body>
+
+<div class="login_frame">
+            <div class="box">
+            <h2>Sign Up</h2>
+            <form onsubmit="CanSubmit()">
+                <div class="wrap">
+                    <input type="name" placeholder="Name" required>
+                </div>
+                <div class="wrap">
+                    <input type="email" placeholder="Email address" required>
+                </div>
+                <div class="wrap">
+                    <input type="password" placeholder="Password" name="txtPassword" required>
+                </div>
+                <div class="wrap">
+                    <input type="password" placeholder="Confirm Password" name="txtConfirmPassword" required>
+                </div>
+                
+                <div class="support">
+                    <div class="remember">
+                    <span><input type="checkbox"></span>
+                    <span>Remember me</span>
+                    </div>
+                    <div class="help">
+                        <a href="#">Need help?</a>
+                    </div>
+                </div>
+
+                <div class="sign">
+                <div class="wrap">
+                   <button>Sign Up</button>
+                </div>
+                </div>
+
+                <div class="support2">
+                <span>For more information,
+                Contact Us at- 0018-5471-2155</span><br><br>
+                <div  class="large">
+                <span>Already a member? <a href="signin.html" >Sign In </a> now.</span><br><br>
+                <span>Return to <a href="index.html" >Home Page</a>.</span>
+                </div>
+                </div>   
+                
+            </form>
+            </div>
+</div>
+</body>
+</html>
